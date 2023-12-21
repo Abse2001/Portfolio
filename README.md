@@ -1,6 +1,15 @@
 # Portfolio
 
-test 1 
+TODO
 
+- 5 pages
+    - home
+    - about
+    - projects
+    - blog
+    - contact
 
-My first portfolio
+- technologies
+    - react
+    - react-router-6
+    - context api
