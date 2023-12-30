@@ -1,30 +1,24 @@
 import React from "react";
-
-
+import { FaBeer } from "react-icons/fa";
 function Navbar() {
-    return (
-        <div className="
-        w-full
-         
-        ">
-            <h1 className="text-white">
-React
-            </h1>
-            <div className="navbar-menu">
-          <ul className="text-white flex 
-        flex-row-reverse">
-            <li>
-              <a href="#" className="p-6">Home</a>
-            </li>
-            <li>
-              <a href="#" className="p-4">About</a>
-            </li>
-          </ul>
-        </div>
-        </div>
-        
-    )
-                
+  return (
+    <div className="
+    height
+    flex 
+    justify-between
+    items-center
+    h-20  ">
+      <h1 className="text-white w-full">React</h1>
+        <ul className="text-white flex">
+          <li>
+            <a href="#" className="p-6">Home</a>
+          </li>
+          <li>
+            <a href="#" className="p-4">About</a>
+          </li>
+        </ul>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;
