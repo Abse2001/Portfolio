@@ -7,7 +7,9 @@ function Navbar() {
     flex 
     justify-between
     items-center
-    h-20  ">
+    h-2
+    p-10
+    ">
       <h1 className="text-white w-full">React</h1>
         <ul className="text-white flex">
           <li>
