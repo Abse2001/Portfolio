@@ -11,11 +11,10 @@ function Navbar() {
     h-2
     p-10
     mx-auto
-    border border-white
-    border-solid
+    
     ">
-      <h1 className="text-white w-full ">React</h1>
-        <ul className="text-white flex">
+      <h1 className="text-white w-full text-3xl font-bold ">React</h1>
+        <ul className="text-white flex hidden">
           <li>
             <a href="#" className="p-6">Home</a>
           </li>
@@ -24,7 +23,17 @@ function Navbar() {
           </li>
         </ul>
         <div>
-        <CiMenuFries color="#ffffff" />
+        <CiMenuFries color="#ffffff" size={20} />
+        </div>
+        <div>
+        <ul className="text-white fixed left-0 top-0 border-r h-full w-[60%] pt-24  ">
+          <li>
+            <a href="#" className="p-4">Home</a>
+          </li>
+          <li>
+            <a href="#" className="p-4">About</a>
+          </li>
+        </ul>
         </div>
     </div>
   );
