@@ -14,7 +14,7 @@ function Navbar() {
     
     ">
       <h1 className="text-white w-full text-3xl font-bold ">React</h1>
-        <ul className="text-white flex hidden">
+        <ul className="text-white  hidden">
           <li>
             <a href="#" className="p-6">Home</a>
           </li>
