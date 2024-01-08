@@ -1,5 +1,5 @@
 import React from "react";
-import { FaBeer } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
 function Navbar() {
   return (
     <div className="
@@ -7,10 +7,14 @@ function Navbar() {
     flex 
     justify-between
     items-center
+    max-w-[1240px]
     h-2
     p-10
+    mx-auto
+    border border-white
+    border-solid
     ">
-      <h1 className="text-white w-full">React</h1>
+      <h1 className="text-white w-full ">React</h1>
         <ul className="text-white flex">
           <li>
             <a href="#" className="p-6">Home</a>
@@ -19,6 +23,9 @@ function Navbar() {
             <a href="#" className="p-4">About</a>
           </li>
         </ul>
+        <div>
+        <CiMenuFries color="#ffffff" />
+        </div>
     </div>
   );
 }
