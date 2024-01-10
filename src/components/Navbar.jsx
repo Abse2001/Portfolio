@@ -13,7 +13,7 @@ function Navbar() {
     mx-auto
     
     ">
-      <h1 className="text-white w-full text-3xl font-bold ">React</h1>
+      <h1 className="text-white w-full text-3xl font-bold ">Abse</h1>
         <ul className="text-white  hidden">
           <li>
             <a href="#" className="p-6">Home</a>
@@ -25,13 +25,16 @@ function Navbar() {
         <div>
         <CiMenuFries color="#ffffff" size={20} />
         </div>
-        <div>
-        <ul className="text-white fixed left-0 top-0 border-r h-full w-[60%] pt-24 space-y-9	 ">
+        <div className="  text-white fixed left-0 top-0 border-r h-full w-[60%]   uppercase bg-[#222831]">
+        
+        <h1 className="m-6 text-white text-3xl font-bold w-full">Abse</h1>
+
+        <ul className="space-y-9 pt-24 m-6">
           <li>
-            <a href="#" className="p-24">Home</a>
+            <a href="#hi" className=" p-4 pr-12 ">Home</a>
           </li>
           <li>
-            <a href="#" className="p-24">About</a>
+            <a href="#bye" className="p-4 pr-12">About</a>
           </li>
         </ul>
         </div>
