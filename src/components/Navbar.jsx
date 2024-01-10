@@ -26,12 +26,12 @@ function Navbar() {
         <CiMenuFries color="#ffffff" size={20} />
         </div>
         <div>
-        <ul className="text-white fixed left-0 top-0 border-r h-full w-[60%] pt-24  ">
+        <ul className="text-white fixed left-0 top-0 border-r h-full w-[60%] pt-24 space-y-9	 ">
           <li>
-            <a href="#" className="p-4">Home</a>
+            <a href="#" className="p-24">Home</a>
           </li>
           <li>
-            <a href="#" className="p-4">About</a>
+            <a href="#" className="p-24">About</a>
           </li>
         </ul>
         </div>
