@@ -1,6 +1,13 @@
-import React from "react";
-import { CiMenuFries } from "react-icons/ci";
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu  } from "react-icons/ai";
+
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="
     height
@@ -11,10 +18,9 @@ function Navbar() {
     h-2
     p-10
     mx-auto
-    
     ">
-      <h1 className="text-white w-full text-3xl font-bold ">Abse</h1>
-        <ul className="text-white  hidden">
+      <h1 className="text-white w-full text-3xl font-bold ">ABSE</h1>
+        <ul className= "text-white hidden">
           <li>
             <a href="#" className="p-6">Home</a>
           </li>
@@ -22,21 +28,19 @@ function Navbar() {
             <a href="#" className="p-4">About</a>
           </li>
         </ul>
-        <div>
-        <CiMenuFries color="#ffffff" size={20} />
+        <div onClick={toggleMenu}>
+          {!isOpen? <AiOutlineMenu  color="#ffffff" size={20}/>  :  <AiOutlineClose  color="#ffffff" size={20} />}
         </div>
-        <div className="  text-white fixed left-0 top-0 border-r h-full w-[60%]   uppercase bg-[#222831]">
-        
-        <h1 className="m-6 text-white text-3xl font-bold w-full">Abse</h1>
-
-        <ul className="space-y-9 pt-24 m-6">
-          <li>
-            <a href="#hi" className=" p-4 pr-12 ">Home</a>
-          </li>
-          <li>
-            <a href="#bye" className="p-4 pr-12">About</a>
-          </li>
-        </ul>
+        <div className={`text-white fixed left-0 top-0 border-r h-full w-[60%] uppercase bg-[#222831] transition-all duration-500 ${isOpen ? "left-0" : " -left-[500px]"}`}>
+          <h1 className="m-6 text-white text-3xl font-bold w-full">Abse</h1>
+          <ul className="space-y-9 pt-24 m-6">
+            <li>
+              <a href="#hi" className=" p-4 pr-12 ">Home</a>
+            </li>
+            <li>
+              <a href="#bye" className="p-4 pr-12">About</a>
+            </li>
+          </ul>
         </div>
     </div>
   );
