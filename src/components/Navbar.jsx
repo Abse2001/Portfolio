@@ -31,8 +31,8 @@ function Navbar() {
         <div onClick={toggleMenu}>
           {!isOpen? <AiOutlineMenu  color="#ffffff" size={20}/>  :  <AiOutlineClose  color="#ffffff" size={20} />}
         </div>
-        <div className={`text-white fixed left-0 top-0 border-r h-full w-[60%] uppercase bg-[#222831] transition-all duration-500 ${isOpen ? "left-0" : " -left-[500px]"}`}>
-          <h1 className="m-6 text-white text-3xl font-bold w-full">Abse</h1>
+        <div className={`text-white fixed  top-0 border-r h-full w-[60%] uppercase bg-[#222831] transition-all duration-500 ${isOpen ? "left-0" : " -left-[500px]"}`}>
+          <h1 className="m-6 text-white text-3xl font-bold w-full">ABSE</h1>
           <ul className="space-y-9 pt-24 m-6">
             <li>
               <a href="#hi" className=" p-4 pr-12 ">Home</a>
